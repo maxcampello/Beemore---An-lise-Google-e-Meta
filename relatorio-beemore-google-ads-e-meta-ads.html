@@ -33,9 +33,9 @@ body{background:var(--white);color:var(--text);font-family:'DM Sans',sans-serif;
 
 
 /* ─── LOGO IMG ─── */
-.nav-brand .v4-wrap img { width:48px!important; height:48px!important; padding:1px; }
-.header-logo-box img     { width:50px!important; height:50px!important; padding:1px; }
-.footer-v4-box img       { width:40px!important; height:40px!important; padding:1px; }
+.nav-brand .v4-wrap img { width:48px!important; height:48px!important; padding:0; }
+.header-logo-box img     { width:50px!important; height:50px!important; padding:0; }
+.footer-v4-box img       { width:40px!important; height:40px!important; padding:0; }
 .footer-center-logo img  { display:block; }
 
 /* ─── SIDEBAR ─── */
@@ -62,9 +62,9 @@ nav{
   display:flex;flex-direction:column;align-items:center;gap:10px;
 }
 .nav-brand .v4-wrap{
-  width:50px;height:50px;border-radius:10px;background:var(--white);
+  width:50px;height:50px;border-radius:10px;background:transparent;
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 2px 12px rgba(0,0,0,0.2);overflow:hidden;flex-shrink:0;
+  overflow:hidden;flex-shrink:0;
 }
 .nav-brand .brand-text{text-align:center}
 .nav-brand .brand-name{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:#fff;letter-spacing:0.03em}
@@ -107,9 +107,9 @@ main{margin-left:var(--sw);flex:1;padding:0;background:var(--white)}
   display:flex;align-items:center;gap:14px;margin-bottom:28px;
 }
 .header-logo-box{
-  width:52px;height:52px;border-radius:10px;background:var(--white);
+  width:52px;height:52px;border-radius:10px;background:transparent;
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  box-shadow:0 2px 10px rgba(0,0,0,0.15);overflow:hidden;
+  overflow:hidden;
 }
 .header-logo-label{color:rgba(255,255,255,0.75);font-size:12px;letter-spacing:.04em}
 .header-logo-label strong{display:block;color:#fff;font-size:14px;font-weight:600;letter-spacing:.02em}
@@ -309,7 +309,7 @@ td.w{color:#B45309;font-weight:600}
   margin-top:40px;
 }
 .footer-logo-wrap{display:flex;align-items:center;gap:12px}
-.footer-v4-box{width:42px;height:42px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}
+.footer-v4-box{width:42px;height:42px;border-radius:8px;background:transparent;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}
 .footer-brand{color:#fff}
 .footer-brand .name{font-family:'Syne',sans-serif;font-weight:700;font-size:14px}
 .footer-brand .sub{font-size:11px;opacity:.65;margin-top:1px}
