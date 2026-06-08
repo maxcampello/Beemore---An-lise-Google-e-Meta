@@ -40,10 +40,18 @@ body{background:var(--white);color:var(--text);font-family:'DM Sans',sans-serif;
 
 /* ─── SIDEBAR ─── */
 nav{
-  width:var(--sw);min-height:100vh;position:fixed;left:0;top:0;
+  width:var(--sw);height:100vh;position:fixed;left:0;top:0;
   background:var(--red-d);
-  display:flex;flex-direction:column;z-index:100;overflow-y:auto;
+  display:flex;flex-direction:column;z-index:100;
+  overflow-y:auto;overflow-x:hidden;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(255,255,255,0.2) transparent;
 }
+nav::-webkit-scrollbar{width:4px}
+nav::-webkit-scrollbar-track{background:transparent}
+nav::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.2);border-radius:4px}
+nav::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,0.4)}
+nav > *{flex-shrink:0}
 .nav-brand{
   padding:18px 20px 14px;
   border-bottom:1px solid rgba(255,255,255,0.12);
